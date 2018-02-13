@@ -22,9 +22,10 @@ document.getElementById('playBall').onclick = function() {
 
 // 승리 조건 달성
 function victory() {
-    document.getElementById('img').src = 'victory.png';
-    document.getElementById('img').style.width = '500px';
-    document.getElementById('img').style.height = '200px';
+    const img = document.querySelector('img');
+    img.src = 'image/victory.png';
+    img.style.width = '500px';
+    img.style.height = '200px';
     document.getElementById('input').style.visibility = 'hidden';
     game.victory = true;
 }
