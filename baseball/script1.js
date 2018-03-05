@@ -114,3 +114,4 @@ function strikeCheck(comNum, myNum) {
 }
 
 //Hello world
+console.log('Hello html and css and Js');
