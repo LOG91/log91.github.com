@@ -122,4 +122,3 @@ console.log('Hello html and css and Js');
 //abc
 //def
 //hello
-//wefwe
