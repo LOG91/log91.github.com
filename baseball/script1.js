@@ -113,4 +113,4 @@ function strikeCheck(comNum, myNum) {
     return strike;
 }
 
-//Hello
+//Hello world
