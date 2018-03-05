@@ -1,20 +1,23 @@
 // 베이스볼 게임
 
 // 현재 컴퓨터 숫자를 담아둘 객체 (전역변수를 쓸 수 없다고 하여 일단은 제가 아는 선에서 이렇게 했습니다..)
-let game = { ball: null, victory: false };
+let game = {
+    ball: null,
+    victory: false
+};
 
 // 페이지가 로드될 때에 새 게임 생성
-window.onload = function() {
-        newGame();
-    }
-    // 새 게임 생성
-document.getElementById('newGame').onclick = function() {
+window.onload = function () {
+    newGame();
+}
+// 새 게임 생성
+document.getElementById('newGame').onclick = function () {
     newGame();
     alert('숫자가 새로 세팅되었습니다 .');
 }
 
 // 내 숫자를 입력
-document.getElementById('playBall').onclick = function() {
+document.getElementById('playBall').onclick = function () {
     let myNum = document.getElementById('myNum').value;
     playGame(myNum);
     alert(playGame(myNum));
@@ -69,7 +72,7 @@ function isRange(num) {
 function isOverlap(num) {
     num = num.toString().split('');
     var tested = new Set();
-    tested = num.reduce(function(a, b) {
+    tested = num.reduce(function (a, b) {
         if (a.indexOf(b) < 0) a.push(b);
         return a;
     }, []);
@@ -91,7 +94,7 @@ function throwBall(comNum, myNum) {
 // 볼 개수 측정
 function checkBall(comNum, myNum) {
     let ball = 0;
-    myNum.map(function(obj, index) {
+    myNum.map(function (obj, index) {
         for (let i = 0; i < comNum.length; i++) {
             if (obj === comNum[i] && i !== myNum.indexOf(obj)) ball++;
         }
@@ -102,7 +105,7 @@ function checkBall(comNum, myNum) {
 // 스트라이크 개수 측정
 function strikeCheck(comNum, myNum) {
     let strike = 0;
-    myNum.map(function(obj, index) {
+    myNum.map(function (obj, index) {
         if (obj === comNum[index]) strike++;
     })
 
