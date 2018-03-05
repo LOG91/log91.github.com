@@ -112,3 +112,5 @@ function strikeCheck(comNum, myNum) {
     comNum.map
     return strike;
 }
+
+//Hello
