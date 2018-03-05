@@ -112,3 +112,10 @@ function strikeCheck(comNum, myNum) {
     comNum.map
     return strike;
 }
+
+//Hello world
+console.log('Hello html and css and Js');
+
+//w wefhowiehfowhefowehfo
+//wefjhowefhowefh
+//wefkjowehfowe
