@@ -1,0 +1,44 @@
+:root {
+  --main-theme-color: #5829d0;
+  --font-weight-mid: 600;
+}
+
+header {
+  height: 500px;
+}
+
+.weight_mid {
+  font-weight: var(--font-weight-mid) !important;
+}
+
+.jumbo_header {
+  background-color: var(--main-theme-color) !important;
+  color: #fff;
+  float: left;
+  width: 100%
+}
+
+.h_wrap {
+  float: left;
+  margin-left: 200px;
+  margin-top: 30px;
+}
+
+.profile_img {
+  width: 18rem;
+  float: right;
+  width: 200px;
+  margin-right: 250px;
+  margin-top: 50px;
+}
+
+.card_main {
+  color: var(--main-theme-color);
+  font-weight: 600;
+  font-size: 1.5rem
+}
+
+.card_sub {
+  color: var(--main-theme-color);
+  font-weight: 600;
+}

@@ -1,0 +1,288 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+  <title>One Page Resume</title>
+
+  <style type="text/css">
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    :root {
+      --main-color: #ff4c4c;
+    }
+
+    body {
+      font: 16px Helvetica, Sans-Serif;
+      line-height: 24px;
+      background: url("./css/images/noise.jpg");
+    }
+
+    .clear {
+      clear: both;
+    }
+
+    #page-wrap {
+      width: 800px;
+      margin: 40px auto 60px;
+    }
+
+    #pic {
+      float: right;
+    }
+
+    h1 {
+      color: var(--main-color);
+      margin: 0 0 16px 0;
+      padding: 0 0 16px 0;
+      font-size: 42px;
+      font-weight: bold;
+      letter-spacing: -2px;
+      border-bottom: 1px solid #ccc;
+    }
+
+    h2 {
+      font-size: 16px;
+      margin: 0 0 6px 0;
+      position: relative;
+    }
+
+    h2 span {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      font-family: Georgia, Serif;
+      font-size: 14px;
+      color: #999;
+      font-weight: normal;
+    }
+
+    p {
+      margin: 0 0 16px 0;
+      font-size: 15px;
+      color: #4e4e4e;
+    }
+
+    a {
+      color: #999;
+      text-decoration: none;
+      border-bottom: 1px dotted #999;
+    }
+
+    a:hover {
+      border-bottom-style: solid;
+      color: black;
+    }
+
+    ul {
+      margin: 0 0 32px 17px;
+    }
+
+    #objective {
+      width: 500px;
+      float: left;
+    }
+
+    #objective p {
+      font-family: Georgia, Serif;
+      font-size: 13px;
+      color: #666;
+    }
+
+    dt {
+      color: var(--main-color);
+      font-style: italic;
+      font-weight: bold;
+      font-size: 18px;
+      text-align: right;
+      padding: 0 26px 0 0;
+      width: 150px;
+      float: left;
+      height: 100px;
+      border-right: 1px solid #999;
+    }
+
+    dd {
+      width: 600px;
+      float: right;
+    }
+
+    dd.clear {
+      float: none;
+      margin: 0;
+      height: 15px;
+    }
+
+    dd span {}
+
+    .profile {
+      width: 200px;
+      border-radius: 90%;
+      margin-top: 20px;
+    }
+
+    .card {
+      float: right;
+      margin: 30px;
+    }
+
+    .card_p {
+      font-size: 13px;
+      color: #000;
+    }
+
+    .skill_box {
+      float: left;
+      margin-right: 80px;
+    }
+
+    .skill_li {
+      font-size: 15px;
+    }
+
+    dt.weapon {
+      height: 400px;
+    }
+
+    dt.education {
+      height: 200px;
+    }
+
+    dd li {
+      font-size: 15px;
+    }
+
+    dd>h2>a {
+      font-size: 13px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div id="page-wrap">
+
+    <img class="profile" src="./css/images/p3.png" alt="Photo" id="pic" />
+
+    <div class="card" id="contact-info" class="vcard">
+
+      <h1 class="fn">Seokki OH</h1>
+      <h2 style="font-size:20px; color:#ff4c4c;margin-bottom: 10px;">Frontend Engineer</h2>
+      <p style="font-size:13px;">
+        Cell: <span style="color:#000;">010-2005-7648</span><br />
+        Email: <a class="card_p" href="mailto:braveosk@gmail.com">braveosk@gmail.com</a><br />
+        Github: <a class="card_p" target="_blank" href="http://www.github.com/LOG91">github.com/LOG91</a>
+      </p>
+      <div id="objective">
+        <p>
+          자바스크립트를 사랑하고 클린코드와 컴포넌트 위주 개발에 관심이 많습니다<br />
+          그리고 트랜디하고 차별화된 UI/UX를 위해 고민하는 것을 좋아하는 개발자입니다<br />
+          늘 성장하는 개발자가 되기 위해 배우고 다른 사람들과 소통하고 있습니다
+        </p>
+      </div>
+    </div>
+
+
+    <div class="clear"></div>
+
+    <dl>
+      <dd class="clear"></dd>
+
+      <dt class="education">Education</dt>
+      <dd>
+        <h2>한국산업기술대학교</h2>
+        <p><strong>Major:</strong> Electricity Engineering</p>
+        <p>2010.03 ~ 2017.08</p>
+      </dd>
+      <dd>
+        <h2>코드스쿼드 교육기관</h2>
+        <p><strong>Major:</strong> Web Frontend
+          <p>2018.03 ~ 2018.11</p>
+      </dd>
+
+      <dd class="clear"></dd>
+
+      <dt class="weapon">My Weapon</dt>
+      <dd>
+        <h2>Vanilla JS</h2>
+        <p>학원을 다니며 JS만 깊게 배우고 씨름하는 시간들을 가졌습니다<br>
+          그 덕에 JS를 사랑하는 개발자가 되었습니다<br>
+          그리고 그 시간들은 저에게 언어를 넘어선 프로그래밍을 배우는 시간이 되었습니다<br>
+          이제 프레임워크는 배우는 단계이지만 기초가 탄탄한만큼 자신이 있습니다<br>
+        </p>
+        <h2>Trendy & Difference</h2>
+        <p>학창시절부터 가방을 고를 때에도 무언가 포인트가 있는
+          특별한 것(혹은 비싼 것)을 골라 그것으로 사람들에게 가방 이쁘다는 말을 많이 들었습니다<br>
+          저는 어떤 아이템을 살 때에 포인트가 있는 남들이 안 하는 것을 좋아합니다<br><br>
+          이것은 개발에서도 적용되었고 남들보다는 조금 더 다른 것 하나 추가하고 더 이쁘게라는<br>
+          마음가짐으로 늘 markup에 임하고 있습니다 아직 서비스경험이 없기에 큰 변화는 없어도<br>
+          제 기술력이 늘어남에 따라 더 큰 장점으로 부각될 것이라 확신합니다 </p>
+        <h2>Clean Code & Design Pattern</h2>
+        <p>클린코드와 깔끔한 아키텍처에 관심이 많습니다<br>
+          누가 보기에도 정돈된 코드와 구조는 매력적이라고 생각합니다<br>
+          이것은 업무 효율에도 좋은 영향을 끼칠 것이며 정돈하는 습관은<br>
+          개발을 넘어서서 협업에도 큰 무기가 될 것이라고 생각합니다
+        </p>
+      </dd>
+      <dd class="clear"></dd>
+
+      <dt>Skills</dt>
+      <dd>
+        <div class="skill_box">
+          <h2>Frontend</h2>
+          <ul>
+            <li class="skill_li"><strong>Javascript</strong> ES6+</li>
+            <li class="skill_li">HTML, CSS</li>
+            <li class="skill_li">github</li>
+          </ul>
+
+        </div>
+      </dd>
+
+      <dd class="clear"></dd>
+
+      <dt>Experiences</dt>
+      <dd>
+        <h2>JSON Parser <span>코드스쿼드 LV2 과정</span>
+          <a target="_blank" href="https://github.com/LOG91/javascript-json/tree/log91">URL</a>
+        </h2>
+        <p>Javascript의 JSON.parser를 직접 구현했습니다</p>
+        <ul>
+          <li>Stack구조를 이용하여 무한 중첩에 대응합니다</li>
+          <li>다양한 예외처리를 하여 완성도를 높였습니다</li>
+        </ul>
+
+        <h2>Web VendingMachine <span>코드스쿼드 LV3 과정</span>
+          <a target="_blank" href="https://github.com/LOG91/javascript-vm/tree/LOG91">URL</a>
+        </h2>
+        <p>Web에서 동작하는 자판기입니다</p>
+        <ul>
+          <li>MVC design을 적용했습니다</li>
+          <li>Jest Framework로 Test했습니다</li>
+        </ul>
+
+        <h2>Food Service(배민찬) <span>코드스쿼드 LV3 과정</span>
+          <a target="_blank" href="https://github.com/LOG91/javascript-food/tree/LOG91">URL</a>
+        </h2>
+        <p>우아한형제들 배민찬 메인페이지를 구현했습니다</p>
+        <ul>
+          <li>ajax로 api데이터를 받아와 랜더링합니다</li>
+          <li>ES modules로 구조를 명시하는 것에 중점을 뒀습니다</li>
+        </ul>
+      </dd>
+
+  </div>
+
+</body>
+
+</html>
