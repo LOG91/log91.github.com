@@ -1,44 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
 :root {
-  --main-theme-color: #5829d0;
-  --font-weight-mid: 600;
+  --main-color: #ff4c4c;
 }
 
-header {
-  height: 500px;
+body {
+  font: 16px Helvetica, Sans-Serif;
+  line-height: 24px;
+  background: url("../css/images/noise.jpg");
 }
 
-.weight_mid {
-  font-weight: var(--font-weight-mid) !important;
+.clear {
+  clear: both;
 }
 
-.jumbo_header {
-  background-color: var(--main-theme-color) !important;
-  color: #fff;
-  float: left;
-  width: 100%
+#page-wrap {
+  width: 800px;
+  height: 1800px;
+  margin: 40px auto 60px;
+  background-color: #e8e8e8;
+  padding: 20px;
 }
 
-.h_wrap {
-  float: left;
-  margin-left: 200px;
-  margin-top: 30px;
-}
-
-.profile_img {
-  width: 18rem;
+#pic {
   float: right;
+}
+
+h1 {
+  color: #fff;
+  margin: 0 0 16px 0;
+  padding: 0 0 16px 0;
+  font-size: 42px;
+  font-weight: bold;
+  letter-spacing: -2px;
+  border-bottom: 1px solid #ccc;
+}
+
+h2 {
+  font-size: 16px;
+  margin: 0 0 6px 0;
+  position: relative;
+}
+
+h2 span {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: 12px;
+  color: #4e4e4e;
+  font-weight: normal;
+}
+
+p {
+  margin: 0 0 16px 0;
+  font-size: 14px;
+  color: #4e4e4e;
+}
+
+a {
+  color: #999;
+  text-decoration: none;
+  border-bottom: 1px solid #fff;
+}
+
+a:hover {
+  border-bottom-style: solid;
+  color: black;
+}
+
+ul {
+  margin: 0 0 32px 17px;
+}
+
+.header_wrap {
+  background-color: var(--main-color);
+  padding: 10px;
+  height: 350px;
+  margin-bottom: 30px;
+}
+
+#objective {
+  width: 500px;
+  float: left;
+}
+
+#objective p {
+  font-family: Georgia, Serif;
+  font-size: 13px;
+  font-weight: 600;
+  color: #fff;
+}
+
+dt {
+  color: var(--main-color);
+  font-style: italic;
+  font-weight: bold;
+  font-size: 18px;
+  text-align: right;
+  padding: 0 26px 0 0;
+  width: 150px;
+  float: left;
+  height: 100px;
+  border-right: 1px solid #999;
+}
+
+dd {
+  width: 600px;
+  float: right;
+}
+
+dd.clear {
+  float: none;
+  margin: 0;
+  height: 15px;
+}
+
+dd span {}
+
+.profile {
   width: 200px;
-  margin-right: 250px;
-  margin-top: 50px;
+  border-radius: 90%;
+  margin-top: 20px;
 }
 
-.card_main {
-  color: var(--main-theme-color);
-  font-weight: 600;
-  font-size: 1.5rem
+.card {
+  float: right;
+  margin: 30px;
 }
 
-.card_sub {
-  color: var(--main-theme-color);
+.card_p {
+  font-size: 13px;
+  color: #fff;
   font-weight: 600;
+}
+
+.skill_box {
+  float: left;
+  margin-right: 80px;
+}
+
+.skill_li {
+  font-size: 15px;
+}
+
+dt.weapon {
+  height: 440px;
+}
+
+dt.education {
+  height: 200px;
+}
+
+dt.exp {
+  height: 380px;
+}
+
+dd li {
+  font-size: 15px;
+}
+
+dd>h2>a {
+  font-size: 13px;
 }

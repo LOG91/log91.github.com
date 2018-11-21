@@ -7,180 +7,7 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
   <title>One Page Resume</title>
-
-  <style type="text/css">
-    * {
-      margin: 0;
-      padding: 0;
-    }
-
-    a {
-      text-decoration: none;
-    }
-
-    :root {
-      --main-color: #ff4c4c;
-    }
-
-    body {
-      font: 16px Helvetica, Sans-Serif;
-      line-height: 24px;
-      background: url("./css/images/noise.jpg");
-    }
-
-    .clear {
-      clear: both;
-    }
-
-    #page-wrap {
-      width: 800px;
-      height: 1800px;
-      margin: 40px auto 60px;
-      background-color: #e8e8e8;
-      padding: 20px;
-    }
-
-    #pic {
-      float: right;
-    }
-
-    h1 {
-      color: #fff;
-      margin: 0 0 16px 0;
-      padding: 0 0 16px 0;
-      font-size: 42px;
-      font-weight: bold;
-      letter-spacing: -2px;
-      border-bottom: 1px solid #ccc;
-    }
-
-    h2 {
-      font-size: 16px;
-      margin: 0 0 6px 0;
-      position: relative;
-    }
-
-    h2 span {
-      position: absolute;
-      bottom: 0;
-      right: 0;
-      font-size: 12px;
-      color: #4e4e4e;
-      font-weight: normal;
-    }
-
-    p {
-      margin: 0 0 16px 0;
-      font-size: 15px;
-      color: #4e4e4e;
-    }
-
-    a {
-      color: #999;
-      text-decoration: none;
-      border-bottom: 1px solid #fff;
-    }
-
-    a:hover {
-      border-bottom-style: solid;
-      color: black;
-    }
-
-    ul {
-      margin: 0 0 32px 17px;
-    }
-
-    .header_wrap {
-      background-color: var(--main-color);
-      padding: 10px;
-      height: 350px;
-      margin-bottom: 30px;
-    }
-
-    #objective {
-      width: 500px;
-      float: left;
-    }
-
-    #objective p {
-      font-family: Georgia, Serif;
-      font-size: 13px;
-      font-weight: 600;
-      color: #fff;
-    }
-
-    dt {
-      color: var(--main-color);
-      font-style: italic;
-      font-weight: bold;
-      font-size: 18px;
-      text-align: right;
-      padding: 0 26px 0 0;
-      width: 150px;
-      float: left;
-      height: 100px;
-      border-right: 1px solid #999;
-    }
-
-    dd {
-      width: 600px;
-      float: right;
-    }
-
-    dd.clear {
-      float: none;
-      margin: 0;
-      height: 15px;
-    }
-
-    dd span {}
-
-    .profile {
-      width: 200px;
-      border-radius: 90%;
-      margin-top: 20px;
-    }
-
-    .card {
-      float: right;
-      margin: 30px;
-    }
-
-    .card_p {
-      font-size: 13px;
-      color: #fff;
-      font-weight: 600;
-    }
-
-    .skill_box {
-      float: left;
-      margin-right: 80px;
-    }
-
-    .skill_li {
-      font-size: 15px;
-    }
-
-    dt.weapon {
-      height: 440px;
-    }
-
-    dt.education {
-      height: 200px;
-    }
-
-    dt.exp {
-      height: 380px;
-    }
-
-    dd li {
-      font-size: 15px;
-    }
-
-    dd>h2>a {
-      font-size: 13px;
-    }
-  </style>
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
@@ -239,7 +66,7 @@
         <h2>Trendy & Difference</h2>
         <p>학창시절부터 가방을 고를 때에도 무언가 포인트가 있는
           특별한 것(혹은 비싼 것)을 골라 그것으로 사람들에게 가방 이쁘다는 말을 많이 들었습니다<br>
-          저는 어떤 아이템을 살 때에 포인트가 있는 남들이 안 하는 것을 좋아합니다<br><br>
+          저는 어떤 아이템을 살 때에 포인트가 있는 남들이 안 하는 것을 좋아합니다<br>
           이것은 개발에서도 적용되었고 남들보다는 조금 더 다른 것 하나 추가하고 더 이쁘게라는<br>
           마음가짐으로 늘 markup에 임하고 있습니다 아직 서비스경험이 없기에 큰 변화는 없어도<br>
           제 기술력이 늘어남에 따라 더 큰 장점으로 부각될 것이라 확신합니다 </p>
@@ -272,10 +99,11 @@
         <h2>JSON Parser <span>코드스쿼드 LV2 과정</span>
           <a target="_blank" href="https://github.com/LOG91/javascript-json/tree/log91">URL</a>
         </h2>
-        <p>Javascript의 JSON.parser를 직접 구현했습니다</p>
+        <p>JS의 내장함수 JSON.parser를 직접 구현했습니다</p>
         <ul>
-          <li>Stack구조를 이용하여 무한 중첩에 대응합니다</li>
-          <li>다양한 예외처리를 하여 완성도를 높였습니다</li>
+          <li>pipe함수 구조로 설계하여 유지보수에 용이하게 했습니다</li>
+          <li>Stack을 이용해 파싱하여 무한 중첩에 대응합니다</li>
+          <li>다양한 예외처리를 하여 함수의 완성도를 높였습니다</li>
         </ul>
 
         <h2>Web VendingMachine <span>코드스쿼드 LV3 과정</span>
@@ -283,7 +111,7 @@
         </h2>
         <p>Web에서 동작하는 자판기입니다</p>
         <ul>
-          <li>MVC design을 적용했습니다</li>
+          <li>MVC design을 채택했습니다</li>
           <li>Jest Framework로 Test했습니다</li>
         </ul>
 
@@ -292,8 +120,9 @@
         </h2>
         <p>우아한형제들 배민찬 메인페이지를 구현했습니다</p>
         <ul>
-          <li>ajax로 api데이터를 받아와 랜더링합니다</li>
+          <li>실제 웹사이트 기능 그대로 구현하도록 노력했습니다</li>
           <li>ES modules로 구조를 명시하는 것에 중점을 뒀습니다</li>
+          <li>ajax로 api데이터를 받아와 랜더링합니다</li>
         </ul>
       </dd>
 
