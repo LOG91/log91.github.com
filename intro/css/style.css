@@ -23,7 +23,7 @@ body {
 
 #page-wrap {
   width: 800px;
-  height: 1800px;
+  height: 1920px;
   margin: 40px auto 60px;
   background-color: #e8e8e8;
   padding: 20px;
@@ -82,7 +82,7 @@ ul {
 .header_wrap {
   background-color: var(--main-color);
   padding: 10px;
-  height: 350px;
+  height: 320px;
   margin-bottom: 30px;
 }
 
@@ -152,6 +152,10 @@ dd span {}
 
 dt.weapon {
   height: 440px;
+}
+
+dt.skills {
+  height: 200px;
 }
 
 dt.education {
