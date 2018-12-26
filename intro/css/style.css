@@ -8,7 +8,7 @@ a {
 }
 
 :root {
-  --main-color: #ff4c4c;
+  --main-color: #2b4162;
 }
 
 body {
@@ -23,9 +23,9 @@ body {
 
 #page-wrap {
   width: 800px;
-  height: 1920px;
+  height: 2300px;
   margin: 40px auto 60px;
-  background-color: #e8e8e8;
+  background-color: #fbfae0;
   padding: 20px;
 }
 
@@ -60,7 +60,8 @@ h2 span {
 
 p {
   margin: 0 0 16px 0;
-  font-size: 14px;
+  font-weight: 600;
+  font-size: 13px;
   color: #4e4e4e;
 }
 
@@ -122,7 +123,8 @@ dd.clear {
   height: 15px;
 }
 
-dd span {}
+dd span {
+}
 
 .profile {
   width: 200px;
@@ -163,13 +165,13 @@ dt.education {
 }
 
 dt.exp {
-  height: 380px;
+  height: 700px;
 }
 
 dd li {
-  font-size: 15px;
+  font-size: 14px;
 }
 
-dd>h2>a {
+dd > h2 > a {
   font-size: 13px;
 }
