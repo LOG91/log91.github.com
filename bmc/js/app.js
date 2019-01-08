@@ -1,7 +1,7 @@
 /* Entry Point */
 
 import { navItemList } from "./Model/data/navData.js";
-import { apiUrl } from "./model/data/apiUrl.js";
+import { apiUrl } from "./Model/data/apiUrl.js";
 import { slideMenuData } from './Model/data/slideMenuData.js';
 import LocalStorage from './Model/localStroage.js';
 
