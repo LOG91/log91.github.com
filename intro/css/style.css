@@ -23,7 +23,7 @@ body {
 
 #page-wrap {
   width: 800px;
-  height: 2300px;
+  height: 2150px;
   margin: 40px auto 60px;
   background-color: #fbfae0;
   padding: 20px;
@@ -165,7 +165,7 @@ dt.education {
 }
 
 dt.exp {
-  height: 700px;
+  height: 600px;
 }
 
 dd li {
