@@ -23,7 +23,7 @@ body {
 
 #page-wrap {
   width: 800px;
-  height: 2150px;
+  height: 2200px;
   margin: 40px auto 60px;
   background-color: #fbfae0;
   padding: 20px;
@@ -93,7 +93,6 @@ ul {
 }
 
 #objective p {
-  font-family: Georgia, Serif;
   font-size: 13px;
   font-weight: 600;
   color: #fff;
@@ -153,11 +152,11 @@ dd span {
 }
 
 dt.weapon {
-  height: 440px;
+  height: 320px;
 }
 
 dt.skills {
-  height: 200px;
+  height: 125px;
 }
 
 dt.education {
@@ -165,7 +164,7 @@ dt.education {
 }
 
 dt.exp {
-  height: 600px;
+  height: 700px;
 }
 
 dd li {
@@ -175,3 +174,4 @@ dd li {
 dd > h2 > a {
   font-size: 13px;
 }
+
