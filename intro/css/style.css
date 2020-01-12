@@ -14,7 +14,7 @@ a {
 body {
   font: 16px Helvetica, Sans-Serif;
   line-height: 24px;
-  background: url("../css/images/noise.jpg");
+  background: url('../css/images/noise.jpg');
 }
 
 .clear {
@@ -126,9 +126,11 @@ dd span {
 }
 
 .profile {
-  width: 200px;
+  width: 178px;
+  height: 180px;
   border-radius: 90%;
-  margin-top: 20px;
+  margin-top: 61px;
+  margin-right: 12px;
 }
 
 .card {
@@ -174,4 +176,3 @@ dd li {
 dd > h2 > a {
   font-size: 13px;
 }
-
