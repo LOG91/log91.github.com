@@ -126,11 +126,11 @@ dd span {
 }
 
 .profile {
-  width: 178px;
-  height: 180px;
+  width: 210px;
+  height: 226px;
   border-radius: 90%;
-  margin-top: 61px;
-  margin-right: 12px;
+  margin-top: 39px;
+  margin-right: 10px;
 }
 
 .card {
