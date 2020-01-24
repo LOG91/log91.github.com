@@ -47,7 +47,7 @@ function _sideMenuItemTpl(data) {
     `<li>
       <a href="" class="slide_menu_a">
       <div class="slide_menu_box">
-      <div class="slide_menu_img_wrap"><img class="slide_menu_img" src="${data.image}">
+      <div class="slide_menu_img_wrap"><img class="slide_menu_img" src="https://i.dailymail.co.uk/1s/2019/11/23/09/21370544-0-image-a-4_1574501241272.jpg">
         <div class="slide_menu_deli1">${data.delivery_type[0]}</div>
         <hr class="slide_menu_deli_hr">
         <div class="slide_menu_deli2">${data.delivery_type[1]}</div>

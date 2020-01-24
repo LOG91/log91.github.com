@@ -1,1 +1,23 @@
-Javascript Level3 Food Service
+# 배민찬 카피 프로젝트
+### 프로젝트 소개
+배민찬 (서비스 종료) 사이트의 메인 페이지를 카피한다
+### 🕹 Getting Started
+
+log91.github.io/bmc
+
+### ⚔️ 기술 스택
+- 바닐라 Javascript
+- 바닐라 Javascript
+- 바닐라 Javascript
+
+### 💻 개발자의 목표
+코드스쿼드 학원에서 lv3로 했던 프로젝트다
+
+프레임워크와 라이브러리를 사용하지 않고 JS로만 코딩하여
+
+JS 자체에 대해 익숙해지고, 어떻게 작동하는 지를 아는 것이었다
+
+React개발자가 아닌 JS개발자가 되길 원한다😎
+
+### 😭 Issue
+- 현재 api의 슬라이더UI의 이미지가 제공되지 않는 점 양해 바랍니다
