@@ -23,7 +23,12 @@ import {
 
 import { RequestAnimations } from "./Util/raf.js";
 
-const header = new Header(navItemList, navTpl);
+import Top from './View/Top.js';
+import Footer from './View/Footer.js'
+import { qs } from "./Util/helper.js";
+
+const header = new Header(navItemList, navTpl, Top);
+
 const autoComplete = new AutoComplete({
   apiUrl: apiUrl.autoComplete,
   storage: new LocalStorage(),
@@ -68,4 +73,5 @@ document.addEventListener("DOMContentLoaded", () => {
   mainMenuSlide.init();
   courseMenuSlide.init();
   scrollBtn.init();
+  Footer.init(qs('footer'))
 });
