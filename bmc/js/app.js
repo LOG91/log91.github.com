@@ -75,3 +75,7 @@ document.addEventListener("DOMContentLoaded", () => {
   scrollBtn.init();
   Footer.init(qs('footer'))
 });
+
+document.body.addEventListener('click', (e) => {
+  e.preventDefault();
+})
