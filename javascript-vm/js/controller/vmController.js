@@ -44,9 +44,14 @@ export default class VendingMachine {
     let checker = this.setTimeoutItemNumber;
     if (!!checker.current) clearTimeout(checker.current);
     checker.number += target.dataset['select'];
+    // this.machineModel.setCurrentNumber(checker.number);
+    // console.log(checker.number);
+    // this.machineView.renderCurrentNumber(this.machineModel.getCurrentNumber());
+    this.changeCurrentNumber(checker.number);
     checker.current = setTimeout(() => {
       if (checker.number > this.machineModel.getItemList().length) {
         this.machineView.alertNotAvailableNumber();
+        this.changeCurrentNumber('아이템 번호를 입력하세요😎');
       } else {
         this.selectItemHandler(checker.number);
       }
@@ -54,9 +59,16 @@ export default class VendingMachine {
     }, 3000);
   }
 
+  changeCurrentNumber(currentNumber) {
+    this.machineModel.setCurrentNumber(currentNumber);
+    console.log(this.machineModel.getCurrentNumber(), 222);
+    this.machineView.renderCurrentNumber(this.machineModel.getCurrentNumber());
+  }
+
   selectItemHandler(itemNumber) {
     if (!this.machineModel.isEnoughMoney(itemNumber)) {
       this.machineView.alertShortOfMoney();
+      this.changeCurrentNumber('아이템 번호를 입력하세요😎');
       return;
     }
 
@@ -65,6 +77,7 @@ export default class VendingMachine {
     const totalInsertedMoney = this.machineModel.getTotalInsertedMoney();
     this.machineView.renderFromItemSelected(itemList, itemNumber, totalInsertedMoney);
     this.startReturnTimeCounting();
+    this.changeCurrentNumber('아이템 번호를 입력하세요😎');
   }
 
   startReturnTimeCounting() {
@@ -95,6 +108,7 @@ export default class VendingMachine {
 
   initItemNumberCounting() {
     this.setTimeoutItemNumber = { current: null, number: '' };
+    
   }
 
   clearChangeTimeCounting() {

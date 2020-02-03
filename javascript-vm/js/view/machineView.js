@@ -25,8 +25,9 @@ export default class MachineView {
       ".coin_button_list_container"
     );
     itemNumberNode.addEventListener("click", ({ target }) => {
-      if (target.className === "coin_button")
+      if (target.className === "coin_button"){
         this.clickItemNumberButton(target);
+      }
     });
   }
 
@@ -75,6 +76,11 @@ export default class MachineView {
   renderLog(message) {
     const logListNode = document.querySelector(".log_list");
     logListNode.insertAdjacentHTML("afterBegin", message);
+  }
+
+  renderCurrentNumber(currentNumber) {
+    const currentNumberNode = document.querySelector('.current_number');
+    currentNumberNode.innerHTML = currentNumber;
   }
 
   renderItem(itemList) {

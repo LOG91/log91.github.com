@@ -8,6 +8,14 @@ export default class MachineModel {
     this.itemList = itemList;
     this.totalInsertedMoney = 0;
     this.notifyReceiveMoney = null;
+    this.currentNumber = 0;
+  }
+  getCurrentNumber() {
+    return this.currentNumber;
+  }
+
+  setCurrentNumber(num) {
+    this.currentNumber = num;
   }
 
   getItemList() {
