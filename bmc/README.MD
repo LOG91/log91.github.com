@@ -3,7 +3,7 @@
 배민찬 (서비스 종료) 사이트의 메인 페이지를 카피한다
 ### 🕹 Getting Started
 
-log91.github.io/bmc
+[log91.github.io/bmc](https://log91.github.io/bmc)
 
 ### ⚔️ 기술 스택
 - 바닐라 Javascript
