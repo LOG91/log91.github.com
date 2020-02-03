@@ -7,7 +7,7 @@
   border: 5px solid #567194;
 }
 
-/* itemDisplay UI */
+/* mDisplay UI */
 
 .item_display {
   width: 60%;
@@ -34,6 +34,10 @@
   margin: 5px;
   text-align: center;
   vertical-align: middle;
+  cursor: pointer;
+}
+.item:hover {
+  opacity: 0.8;
 }
 
 .item_name {
@@ -102,6 +106,7 @@
 
 .coin_button_item {
   display: inline-block;
+  cursor: pointer;
 }
 
 .coin_button {
@@ -171,13 +176,14 @@
 }
 
 .available_item {
-  background-color: #b0ffaa;
+  background-color: #feffce;
   color: #000;
 }
 
 .money_list,
 .money_item {
   display: block;
+  cursor: pointer;
   padding-left: 0px;
 }
 
