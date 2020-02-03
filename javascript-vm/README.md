@@ -6,7 +6,7 @@
 웹 자판기를 만든다😎
 
 ### Getting Started
-log91.github.io/javascript-vm
+[log91.github.io/javascript-vm](log91.github.io/javascript-vm)
 
 ### 💻 개발자의 목표
 - MVC 디자인 패턴으로 개발하기
