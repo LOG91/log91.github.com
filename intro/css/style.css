@@ -175,4 +175,5 @@ dd li {
 
 dd > h2 > a {
   font-size: 13px;
+  text-decoration: underline;
 }
