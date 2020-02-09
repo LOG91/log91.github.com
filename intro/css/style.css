@@ -23,7 +23,7 @@ body {
 
 #page-wrap {
   width: 800px;
-  height: 1800px;
+  height: 2500px;
   margin: 40px auto 60px;
   background-color: #fbfae0;
   padding: 20px;
@@ -77,7 +77,7 @@ a:hover {
 }
 
 ul {
-  margin: 0 0 32px 17px;
+  margin: 0 0 17px 17px;
 }
 
 .header_wrap {
@@ -166,7 +166,7 @@ dt.education {
 }
 
 dt.exp {
-  height: 550px;
+  height: 1100px;
 }
 
 dd li {
@@ -176,4 +176,9 @@ dd li {
 dd > h2 > a {
   font-size: 13px;
   text-decoration: underline;
+}
+
+.exp__mid {
+  font-weight: 600;
+  font-size: 14px;
 }
