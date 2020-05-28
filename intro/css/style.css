@@ -14,7 +14,7 @@ a {
 body {
   font: 16px Helvetica, Sans-Serif;
   line-height: 24px;
-  background: url('../css/images/noise.jpg');
+  background: #d4d4d4;
 }
 
 .clear {
@@ -23,30 +23,132 @@ body {
 
 #page-wrap {
   width: 800px;
-  height: 2500px;
   margin: 40px auto 60px;
   background-color: #fbfae0;
   padding: 20px;
 }
 
-#pic {
-  float: right;
-}
-
-h1 {
+.heading {
   color: #fff;
   margin: 0 0 16px 0;
   padding: 0 0 16px 0;
-  font-size: 42px;
+  font-size: 30px;
   font-weight: bold;
   letter-spacing: -2px;
   border-bottom: 1px solid #ccc;
+}
+
+.heading-sub {
+  font-size: 20px;
+  color: #fff;
+  margin-bottom: 10px;
+}
+.heading__name {
+  position: relative;
+  top: 4px;
+  margin-bottom: 10px;
+  color: #fff;
+  font-weight: 600;
+  font-size: 25px;
+}
+
+/* tech -box */
+.tech-box__list {
+}
+
+.tech-box__heading {
+  color: #2b4162;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.tech-box__item {
+  list-style-type: circle;
+  font-size: 14px;
+  margin-bottom: 15px;
+  margin-left: 18px;
+  color: #333333;
+}
+
+.project-box {
+  position: relative;
+  border: 1px dashed #b9b9b9;
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.project-box:hover {
+  background-color: #777;
+}
+.project-box:hover .project-box__a {
+  opacity: 1;
+  transform: translateX(0px);
+}
+.project-box:hover .project-box__desc {
+  color: #fff;
+}
+.project-box:hover .project-box__heading {
+  color: #fff;
+}
+.project-box:hover .skill-box__item {
+  border-color: #fff;
+}
+
+.project-box__heading {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 12px;
+}
+.project-box__desc--sub {
+  font-weight: 600;
+  margin: auto 0;
+  margin-right: 5px;
+}
+
+.project-box__a {
+  position: absolute;
+  top: 100px;
+  left: 430px;
+  transform: translateX(-100px);
+  transition: ease 0.5s;
+  opacity: 0;
+  display: flex;
+  color: #fbfae0;
+  justify-content: flex-end;
+}
+.project-box__icon {
+  font-size: 50px;
+}
+
+.icon-box {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.icon-box__icon {
+  color: #fff;
+  margin-left: 10px;
+}
+.icon-box__a {
+  font-size: 27px;
+  color: #fff;
+  font-weight: 600;
+  border: 0;
+}
+.icon-box__span {
+  position: relative;
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
 }
 
 h2 {
   font-size: 16px;
   margin: 0 0 6px 0;
   position: relative;
+  color: #2b4162;
+  margin-bottom: 20px;
+  font-size: 18px;
 }
 
 h2 span {
@@ -59,16 +161,12 @@ h2 span {
 }
 
 p {
+  line-height: 33px;
+  font-size: 14px;
   margin: 0 0 16px 0;
   font-weight: 600;
   font-size: 13px;
   color: #4e4e4e;
-}
-
-a {
-  color: #ea6363;
-  text-decoration: none;
-  border-bottom: 1px solid #fff;
 }
 
 a:hover {
@@ -76,72 +174,88 @@ a:hover {
   color: black;
 }
 
-ul {
-  margin: 0 0 17px 17px;
-}
-
 .header_wrap {
   background-color: var(--main-color);
   padding: 10px;
-  height: 320px;
   margin-bottom: 30px;
 }
 
-#objective {
-  width: 500px;
-  float: left;
-}
-
-#objective p {
+.header__description {
   font-size: 13px;
   font-weight: 600;
   color: #fff;
+  margin-bottom: 10px;
+}
+.header__description--a {
+  text-decoration: underline;
+  font-size: 14px;
+  font-weight: 600;
+  color: #ff9d9d;
+}
+.header__description--a:hover {
+  color: #fff;
+}
+
+.skill-box__icon {
+  width: 30px;
+  height: 30px;
+}
+
+.skill-box__list {
+  display: flex;
+  margin: 12px 0;
+}
+.skill-box__item {
+  display: flex;
+  border: 1px solid #000;
+  height: fit-content;
+  border-radius: 18px;
+  padding: 5px;
+  margin-right: 7px;
+}
+.skill-box__name {
+  margin: auto 0;
 }
 
 dt {
   color: var(--main-color);
-  font-style: italic;
-  font-weight: bold;
-  font-size: 18px;
+  position: relative;
   text-align: right;
-  padding: 0 26px 0 0;
-  width: 150px;
+  top: 5px;
+  font-weight: bold;
+  min-width: 50px;
+  font-size: 20px;
+  margin-left: 30px;
   float: left;
-  height: 100px;
-  border-right: 1px solid #999;
+  height: 0;
 }
 
 dd {
+  border-left: 1px solid #ccc;
   width: 600px;
-  float: right;
+  padding-left: 20px;
+  margin-left: 140px;
+  margin-bottom: 30px;
 }
 
 dd.clear {
   float: none;
   margin: 0;
-  height: 15px;
-}
-
-dd span {
+  height: 0;
 }
 
 .profile {
   width: 210px;
-  height: 226px;
+  height: 0;
   border-radius: 30%;
   margin-top: 39px;
   margin-right: 10px;
 }
 
 .card {
-  float: right;
   margin: 30px;
-}
-
-.card_p {
-  font-size: 13px;
-  color: #fff;
-  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
 }
 
 .skill_box {
@@ -154,19 +268,19 @@ dd span {
 }
 
 dt.weapon {
-  height: 320px;
+  height: 0;
 }
 
 dt.skills {
-  height: 125px;
+  height: 0;
 }
 
 dt.education {
-  height: 200px;
+  height: 0;
 }
 
 dt.exp {
-  height: 1100px;
+  height: 0;
 }
 
 dd li {
@@ -179,6 +293,6 @@ dd > h2 > a {
 }
 
 .exp__mid {
-  font-weight: 600;
-  font-size: 14px;
+  font-weight: 900;
+  font-size: 15px;
 }
